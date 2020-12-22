@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @SpringBootApplication
 public class HelloAzureApplication {
@@ -15,7 +16,7 @@ public class HelloAzureApplication {
 	@Controller
 	class WebController {
 		
-		@GetMapping
+		@RequestMapping
 		public String home(){
 			return "index";
 		}
