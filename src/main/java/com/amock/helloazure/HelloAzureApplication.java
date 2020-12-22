@@ -16,7 +16,7 @@ public class HelloAzureApplication {
 	@Controller
 	class WebController {
 		
-		@RequestMapping
+		@RequestMapping("/ind")
 		public String home(){
 			return "index";
 		}
